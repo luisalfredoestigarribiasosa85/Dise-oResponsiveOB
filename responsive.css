@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 100vh;
+    background-color: rgb(224, 208, 188);
+}
+.barra-izq {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.item {
+    background-color: rgb(15, 15, 71);
+    color: aliceblue;
+    width: fit-content;
+    font-size: 16pt;
+    font-family: arial;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+}
+.seccion-der div {
+    background-color: rgb(15, 15, 71);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    float: right;
+    width: 50%;
+    height: 185px;
+    border-radius: 5px;
+
+}
+p {
+    text-align: center;
+}
+@media (max-width: 640px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .barra-izq {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    .seccion-der div {
+        display: flex;
+        margin-top: -80%;
+        margin-right: 25%;
+    }
+}
